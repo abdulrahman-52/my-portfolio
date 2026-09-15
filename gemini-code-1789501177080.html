@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البورتفوليو الشخصي | المهندس والمطور</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- الهيدر ونظام التنقل -->
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">&lt;Portfolio /&gt;</a>
+            <nav>
+                <ul>
+                    <li><a href="#about">عنّي</a></li>
+                    <li><a href="#skills">المهارات</a></li>
+                    <li><a href="#projects">المشاريع</a></li>
+                    <li><a href="#contact">التواصل</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>أهلاً بك، أنا <span class="highlight">مهندس آلات دقيقة وتحكم ومطور أنظمة</span></h1>
+            <p>متخصص في الأنظمة المدمجة (Embedded Systems)، البرمجة، والتحكم الآلي. أعمل على ابتكار حلول هندسية وبرمجية تجمع بين العتاد (Hardware) والبرمجيات (Software).</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">عرض المشاريع</a>
+                <a href="#contact" class="btn secondary-btn">تواصل معي</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المهارات التقنية -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">المهارات التقنية والبرمجية</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fa-solid fa-microchip skill-icon"></i>
+                    <h3>الأنظمة المدمجة والعتاد</h3>
+                    <p>Raspberry Pi Pico, ESP32, Arduino, Sensors, Circuit Design</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-code skill-icon"></i>
+                    <h3>لغات البرمجة</h3>
+                    <p>Python, C++, MicroPython, CircuitPython</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-industry skill-icon"></i>
+                    <h3>الأتمتة والتحكم</h3>
+                    <p>PLC Programming, TIA Portal, MATLAB / Simulink</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fa-solid fa-desktop skill-icon"></i>
+                    <h3>تطوير التطبيقات والبرامج</h3>
+                    <p>Tkinter, PyInstaller, Simulation Tools (Wokwi, Multisim)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المشاريع -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">أبرز المشاريع</h2>
+            <div class="projects-grid">
+
+                <!-- مشروع 1 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>جهاز قراءة وتحليل درجات الحرارة</h3>
+                        <p>نظام مدمج يعتمد على متحكم Raspberry Pi Pico وشاشة OLED لعرض درجة حرارة المعالج بوحدات مختلفة (C, F, K) مع التنبيهات الذكية عند تجاوز الحدود.</p>
+                        <div class="tech-tags">
+                            <span>Raspberry Pi Pico</span>
+                            <span>CircuitPython</span>
+                            <span>SSD1306 OLED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 2 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>تطبيق خزنة كلمة المرور المشفرة (Desktop App)</h3>
+                        <p>برنامج سطح مكتب مخصص لإدارة وتشفير البيانات والكلمات السرية بحماية Master Password مع آلية Challenge-Response.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>Cryptography</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مشروع 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <h3>وحدة تحكم ألعاب USB مخصصة</h3>
+                        <p>بناء وتطوير وحدة تحكم بالألعاب باستخدام عصا تحكم (Joystick) وأزرار وشاشة عرض مدمجة مع إمكانية التحويل بين نمط الكيبورد والماوس.</p>
+                        <div class="tech-tags">
+                            <span>Microcontrollers</span>
+                            <span>Hardware Interface</span>
+                            <span>CircuitPython</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل والفوتر -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <h2>دعنا نعمل معاً!</h2>
+            <p>هل لديك مشروع أو فرصة عمل؟ يسعدني تواصلك معي عبر الوسائل التالية:</p>
+            <div class="social-links">
+                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> البريد الإلكتروني</a>
+            </div>
+            <p class="copyright">جميع الحقوق محفوظة © 2026</p>
+        </div>
+    </footer>
+
+</body>
+</html>
