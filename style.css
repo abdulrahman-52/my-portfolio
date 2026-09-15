@@ -1,238 +1,157 @@
-:root {
-    --bg-color: #0f172a;
-    --card-bg: #1e293b;
-    --accent-color: #38bdf8;
-    --text-color: #f8fafc;
-    --text-muted: #94a3b8;
-    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
+    background-color: #f8f9fa;
+    color: #333;
     line-height: 1.6;
 }
 
-.container {
-    width: 85%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* Navbar */
-.navbar {
-    background-color: rgba(15, 23, 42, 0.9);
-    position: fixed;
+/* القائمة العلوية */
+header {
+    background-color: #1a252f;
+    position: sticky;
     top: 0;
-    width: 100%;
-    backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
-    border-bottom: 1px solid #334155;
 }
 
-.navbar .container {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
 }
 
 .logo {
-    color: var(--accent-color);
+    color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
-    text-decoration: none;
 }
 
-nav ul {
-    display: flex;
+.nav-links {
     list-style: none;
+    display: flex;
     gap: 1.5rem;
 }
 
-nav a {
-    color: var(--text-color);
+.nav-links a {
+    color: #ecf0f1;
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s;
 }
 
-nav a:hover {
-    color: var(--accent-color);
+.nav-links a:hover, .nav-links a.active {
+    color: #3498db;
 }
 
-/* Hero Section */
-.hero {
-    height: 100vh;
+/* قسم المقدمة ثنائي اللغة */
+.hero-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.intro-container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
-    padding-top: 60px;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
-.hero-content h1 {
-    font-size: 2.8rem;
+.intro-box {
+    flex: 1;
+    padding: 2rem;
+    background: #f1f5f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.intro-box h2 {
     margin-bottom: 1rem;
+    color: #1e293b;
 }
 
-.highlight {
-    color: var(--accent-color);
-}
-
-.hero-content p {
-    color: var(--text-muted);
-    font-size: 1.2rem;
-    max-width: 600px;
-    margin-bottom: 2rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 0.8rem 1.8rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: transform 0.2s, background-color 0.3s;
-}
-
-.primary-btn {
-    background-color: var(--accent-color);
-    color: #0f172a;
-    margin-left: 1rem;
-}
-
-.secondary-btn {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-}
-
-/* Sections */
-.skills-section, .projects-section {
-    padding: 5rem 0;
-}
-
-.section-title {
+/* معرض صور المشاريع */
+.featured-projects, .section-padding {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 2rem;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    position: relative;
 }
 
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: var(--accent-color);
-    margin: 0.5rem auto 0;
-    border-radius: 2px;
+.featured-projects h3, .section-padding h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #0f172a;
 }
 
-/* Grid Layouts */
-.skills-grid, .projects-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
 }
 
-.skill-card, .project-card {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #334155;
-    transition: transform 0.3s;
+.project-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.skill-card:hover, .project-card:hover {
-    transform: translateY(-5px);
-}
-
-.skill-icon {
-    font-size: 2.5rem;
-    color: var(--accent-color);
-    margin-bottom: 1rem;
-}
-
-.skill-card h3 {
-    margin-bottom: 0.5rem;
-}
-
-.skill-card p {
-    color: var(--text-muted);
-}
-
-/* Projects */
-.project-card h3 {
-    color: var(--accent-color);
-    margin-bottom: 0.8rem;
-}
-
-.project-card p {
-    color: var(--text-muted);
-    font-size: 0.95rem;
-    margin-bottom: 1.2rem;
-}
-
-.tech-tags {
+.img-placeholder {
+    height: 180px;
+    background-color: #cbd5e1;
+    border-radius: 6px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
-
-.tech-tags span {
-    background: #0f172a;
-    color: var(--accent-color);
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    border: 1px solid #334155;
-}
-
-/* Footer */
-.footer {
-    background-color: #090d16;
-    text-align: center;
-    padding: 4rem 0 2rem;
-    border-top: 1px solid #334155;
-}
-
-.footer h2 {
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.footer p {
-    color: var(--text-muted);
-}
-
-.social-links {
-    margin: 2rem 0;
+/* زر التواصل */
+.contact-links {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin-top: 1.5rem;
 }
 
-.social-links a {
-    color: var(--text-color);
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #2563eb;
+    color: white;
     text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s;
+    border-radius: 6px;
+    transition: background 0.3s;
 }
 
-.social-links a:hover {
-    color: var(--accent-color);
+.btn:hover {
+    background-color: #1d4ed8;
 }
 
-.copyright {
-    margin-top: 2rem;
-    font-size: 0.85rem;
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #0f172a;
+    color: white;
+    margin-top: 4rem;
+}
+
+/* تجاوب مع الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .intro-container {
+        flex-direction: column;
+    }
 }
