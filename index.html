@@ -3,129 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>البورتفوليو الشخصي | المهندس والمطور</title>
+    <title>البورتفوليو الشخصي | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- الهيدر ونظام التنقل -->
-    <header class="navbar">
-        <div class="container">
-            <a href="#" class="logo">&lt;Portfolio /&gt;</a>
-            <nav>
-                <ul>
-                    <li><a href="#about">عنّي</a></li>
-                    <li><a href="#skills">المهارات</a></li>
-                    <li><a href="#projects">المشاريع</a></li>
-                    <li><a href="#contact">التواصل</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- القائمة العلوية Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">عبدالرحمن</div>
+            <ul class="nav-links">
+                <li><a href="#about" class="active">عني</a></li>
+                <li><a href="#projects">مشاريع</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- القسم الرئيسي (Hero Section) -->
-    <section class="hero">
-        <div class="container hero-content">
-            <h1>أهلاً بك، أنا <span class="highlight">مهندس آلات دقيقة وتحكم ومطور أنظمة</span></h1>
-            <p>متخصص في الأنظمة المدمجة (Embedded Systems)، البرمجة، والتحكم الآلي. أعمل على ابتكار حلول هندسية وبرمجية تجمع بين العتاد (Hardware) والبرمجيات (Software).</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary-btn">عرض المشاريع</a>
-                <a href="#contact" class="btn secondary-btn">تواصل معي</a>
+    <!-- قسم المقدمة (عني) - ثنائي اللغة -->
+    <section id="about" class="hero-section">
+        <div class="intro-container">
+            <!-- المقدمة باللغة العربية (يسار) -->
+            <div class="intro-box ar">
+                <h2>أهلاً بك 👋</h2>
+                <p>
+                    أنا مهندس آلات دقيقة وتحكم، متخصص في الأنظمة المدمجة، البرمجة، والأتمتة الصناعية. أعمل على تطوير حلول هندسية مبتكرة تجمع بين العتاد (Hardware) والبرمجيات (Software) للتحكم بالأنظمة وتحسين كفاءتها.
+                </p>
+            </div>
+
+            <!-- المقدمة باللغة الإنجليزية (يمين) -->
+            <div class="intro-box en" dir="ltr">
+                <h2>Welcome 👋</h2>
+                <p>
+                    I am an Instrumentation & Control Engineer specializing in embedded systems, programming, and industrial automation. I build innovative engineering solutions bridging hardware and software to control and optimize complex systems.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- قسم المهارات التقنية -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title">المهارات التقنية والبرمجية</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fa-solid fa-microchip skill-icon"></i>
-                    <h3>الأنظمة المدمجة والعتاد</h3>
-                    <p>Raspberry Pi Pico, ESP32, Arduino, Sensors, Circuit Design</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-code skill-icon"></i>
-                    <h3>لغات البرمجة</h3>
-                    <p>Python, C++, MicroPython, CircuitPython</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-industry skill-icon"></i>
-                    <h3>الأتمتة والتحكم</h3>
-                    <p>PLC Programming, TIA Portal, MATLAB / Simulink</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fa-solid fa-desktop skill-icon"></i>
-                    <h3>تطوير التطبيقات والبرامج</h3>
-                    <p>Tkinter, PyInstaller, Simulation Tools (Wokwi, Multisim)</p>
-                </div>
+    <!-- معرض صور المشاريع في الصفحة الرئيسية -->
+    <section class="featured-projects">
+        <h3>معرض المشاريع</h3>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="img-placeholder">صورة المشروع 1</div>
+                <h4>مشروع الأنظمة المدمجة</h4>
+            </div>
+            <div class="project-card">
+                <div class="img-placeholder">صورة المشروع 2</div>
+                <h4>مشروع التحكم والأتمتة</h4>
+            </div>
+            <div class="project-card">
+                <div class="img-placeholder">صورة المشروع 3</div>
+                <h4>تطبيقات البرمجة</h4>
             </div>
         </div>
     </section>
 
-    <!-- قسم المشاريع -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">أبرز المشاريع</h2>
-            <div class="projects-grid">
+    <!-- قسم المشاريع (مكان مخصص للمستقبل) -->
+    <section id="projects" class="section-padding">
+        <h3>المشاريع</h3>
+        <p>سنقوم بإضافة تفاصيل المشاريع الكاملة، الصور، والملفات هنا قريباً.</p>
+    </section>
 
-                <!-- مشروع 1 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>جهاز قراءة وتحليل درجات الحرارة</h3>
-                        <p>نظام مدمج يعتمد على متحكم Raspberry Pi Pico وشاشة OLED لعرض درجة حرارة المعالج بوحدات مختلفة (C, F, K) مع التنبيهات الذكية عند تجاوز الحدود.</p>
-                        <div class="tech-tags">
-                            <span>Raspberry Pi Pico</span>
-                            <span>CircuitPython</span>
-                            <span>SSD1306 OLED</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 2 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>تطبيق خزنة كلمة المرور المشفرة (Desktop App)</h3>
-                        <p>برنامج سطح مكتب مخصص لإدارة وتشفير البيانات والكلمات السرية بحماية Master Password مع آلية Challenge-Response.</p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>Tkinter</span>
-                            <span>Cryptography</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- مشروع 3 -->
-                <div class="project-card">
-                    <div class="project-info">
-                        <h3>وحدة تحكم ألعاب USB مخصصة</h3>
-                        <p>بناء وتطوير وحدة تحكم بالألعاب باستخدام عصا تحكم (Joystick) وأزرار وشاشة عرض مدمجة مع إمكانية التحويل بين نمط الكيبورد والماوس.</p>
-                        <div class="tech-tags">
-                            <span>Microcontrollers</span>
-                            <span>Hardware Interface</span>
-                            <span>CircuitPython</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+    <!-- قسم التواصل -->
+    <section id="contact" class="section-padding">
+        <h3>التواصل</h3>
+        <p>يسعدني التواصل معك عبر الوسائل التالية:</p>
+        <div class="contact-links">
+            <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
+            <a href="mailto:example@email.com" class="btn">البريد الإلكتروني</a>
         </div>
     </section>
 
-    <!-- قسم التواصل والفوتر -->
-    <footer id="contact" class="footer">
-        <div class="container footer-content">
-            <h2>دعنا نعمل معاً!</h2>
-            <p>هل لديك مشروع أو فرصة عمل؟ يسعدني تواصلك معي عبر الوسائل التالية:</p>
-            <div class="social-links">
-                <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
-                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-                <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i> البريد الإلكتروني</a>
-            </div>
-            <p class="copyright">جميع الحقوق محفوظة © 2026</p>
-        </div>
+    <footer>
+        <p>جميع الحقوق محفوظة © 2026</p>
     </footer>
 
 </body>
